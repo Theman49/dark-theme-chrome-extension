@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "My Dark Theme",
+    "version": "1.0",
+    "description": "A simple Chrome extension to change to Dark Theme",
+    "action": {
+        "default_popup": "index.html"
+    },
+    "content_scripts": [
+        {
+            "css": [
+                "style.css"
+            ],
+            "js": [
+                "scripts/dark1.js",
+                "scripts/dark2.js",
+                "scripts/reset.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ],
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ]
+}
